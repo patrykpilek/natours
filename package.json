@@ -15,7 +15,8 @@
     "copy:fonts": "cp -R css/fonts/ docs/",
     "copy:css": "cp css/style.css docs/css/",
     "copy:html": "cp index.html docs/",
-    "create:docs": "npm-run-all copy:fonts copy:css copy:html",
+    "copy:img": "cp -R img/ docs/",
+    "create:docs": "npm-run-all copy:fonts copy:css copy:html copy:img",
     "build:docs":"npm-run-all build:css create:docs"
   },
   "author": "Patryk",
